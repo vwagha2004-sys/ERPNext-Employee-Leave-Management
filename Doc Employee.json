@@ -1,0 +1,13 @@
+{
+ "doctype": "DocType",
+ "name": "Custom Employee",
+ "module": "Employee Management",
+ "fields": [
+  {"fieldname": "employee_id", "fieldtype": "Data", "label": "Employee ID", "reqd": 1, "unique": 1},
+  {"fieldname": "full_name", "fieldtype": "Data", "label": "Full Name", "reqd": 1},
+  {"fieldname": "email", "fieldtype": "Data", "options": "Email", "label": "Email"},
+  {"fieldname": "department", "fieldtype": "Link", "options": "Department", "label": "Department"},
+  {"fieldname": "joining_date", "fieldtype": "Date", "label": "Joining Date"},
+  {"fieldname": "profile_picture", "fieldtype": "Attach Image", "label": "Profile Picture"}
+ ]
+}

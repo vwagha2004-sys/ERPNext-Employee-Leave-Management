@@ -1,0 +1,12 @@
+{
+ "doctype": "DocType",
+ "name": "Leave Request",
+ "module": "Employee Management",
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Custom Employee", "label": "Employee", "reqd": 1},
+  {"fieldname": "leave_type", "fieldtype": "Select", "options": "Sick Leave\nCasual Leave\nPaid Leave", "label": "Leave Type"},
+  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date", "reqd": 1},
+  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date", "reqd": 1},
+  {"fieldname": "status", "fieldtype": "Select", "options": "Pending\nApproved\nRejected\nCanceled", "label": "Status", "default": "Pending"}
+ ]
+}
